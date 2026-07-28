@@ -6,6 +6,7 @@
   /* Cores para a porra do gradient */
   --init-color: #8e19fb;
   --finish-color: #1959fb;
+  --elipse: url("../public/umaElipse.png");
 }
 
 @theme {
@@ -13,4 +14,5 @@
   --font-main: var(--main-font);
   --color-init: var(--init-color);
   --color-finish: var(--finish-color);
+  --background-elipse: var(--elipse);
 }

@@ -34,7 +34,7 @@ export default function HeaderComponent() {
             Contact
           </Link>
         </nav>
-        <button className="bg-linear-to-r from-init to-finish text-white w-fit h-fit font-bold p-4 rounded-4xl text-2xl">
+        <button className="bg-linear-to-r from-init to-finish text-white w-fit h-fit font-medium py-4 px-6 rounded-4xl text-2xl">
           Let´s Talk
         </button>
       </div>
