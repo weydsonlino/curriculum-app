@@ -10,11 +10,11 @@ function CardComponent(props: CardComponentProps) {
   const size = {
     sm: ["w-[375px]", "h-[315px]", "text-[32px]", "64"],
     md: ["w-80", "h-80", "text-[64px]", "32"],
-    lg: ["w-96", "h-96", "text-[80px]", "64"],
+    lg: ["w-[560px]", "h-[346px]", "text-[32px]", "64"],
   };
   return (
     <div
-      className={`${size[props.width][0]} ${size[props.width][1]} bg-linear-to-b from-init to-azul-escuro rounded-4xl flex flex-col items-center justify-center text-white text-2xl font-semibold py-9 space-y-2`}
+      className={`${size[props.width][0]} ${size[props.width][1]} bg-linear-to-b from-init to-azul-escuro rounded-4xl flex flex-col items-center justify-center text-white text-2xl font-semibold py-9 space-y-2 shrink-0`}
     >
       <Image
         src={props.image}

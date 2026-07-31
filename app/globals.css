@@ -23,3 +23,21 @@
   --background-elipse: var(--elipse);
   --background-teste: var(--fundo);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-init), var(--color-finish));
+  border-radius: 9999px;
+  border: 2px solid #000222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.15);
+}

@@ -11,7 +11,10 @@ import nest from "../../public/nest.png";
 import php from "../../public/php.png";
 import laravel from "../../public/laravel.png";
 import CardProjectsComponent from "../components/CardProjectsComponent";
+import AsgenHomePage from "../../public/AsgenHomePage.png";
+import GlHomePage from "../../public/GlHomePage.png";
 import oni from "../../public/oni.png";
+import CarrouselComponent from "../components/CarrouselComponet";
 function HomePage() {
   return (
     <div className="w-full min-h-screen flex flex-col flex-1 items-center justify-start bg-linear-to-b from-[#00010F] to-[#000442]">
@@ -134,17 +137,68 @@ function HomePage() {
             </div>
           </div>
 
-          <article className="w-full h-fit flex flex-row items-start justify-center space-x-16 ml-4 mt-7">
+          {/* <CarrouselComponent>
             <CardProjectsComponent
-              image={oni}
+              image={GlHomePage}
               title="Glosário de Libras"
               type="Education"
+              link="https://libras-glossario-ifpe.onrender.com/"
             />
-            <CardProjectsComponent image={oni} title="Asgen" type="Education" />
+            <CardProjectsComponent
+              image={AsgenHomePage}
+              title="Asgen"
+              type="Education"
+              link="https://asgen.up.railway.app/"
+            />
             <CardProjectsComponent
               image={oni}
               title="Descubra Mais"
               type="Travel"
+            />
+          </CarrouselComponent> */}
+          <article className="w-full h-fit flex flex-row items-start justify-center space-x-16 ml-4 mt-7">
+            <CardProjectsComponent
+              image={GlHomePage}
+              title="Glosário de Libras"
+              type="Education"
+              link="https://libras-glossario-ifpe.onrender.com/"
+            />
+            <CardProjectsComponent
+              image={AsgenHomePage}
+              title="Asgen"
+              type="Education"
+              link="https://asgen.up.railway.app/"
+            />
+            <CardProjectsComponent
+              image={oni}
+              title="Descubra Mais"
+              type="Travel"
+            />
+          </article>
+        </section>
+        {/* My Services */}
+        <section className="w-full h-1/2 flex flex-col items-start justify-center space-y-10 mt-10 mb-16 ">
+          <h2 className="text-[64px] font-semibold text-white text-primary border-b-4 border-[#8E19FB] ml-32 mt-16">
+            My Services
+          </h2>
+          <article className="w-full h-fit flex flex-row items-start justify-center space-x-16 ml-4 mt-7 flex-wrap">
+            <CardComponent
+              image={Frame}
+              title="Web Development"
+              description="Build responsive, modern, and high-performance websites focused on usability and scalability."
+              width="lg"
+            />
+            <CardComponent
+              image={Frame}
+              title="Frontend Development"
+              description="Create intuitive user interfaces using modern frameworks with responsive and accessible design."
+              width="lg"
+            />
+            <CardComponent
+              image={Frame}
+              title="Backend Development"
+              description="Develop secure APIs, business logic, authentication, and server-side applications."
+              width="lg"
             />
           </article>
         </section>
