@@ -18,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={` ${manrope.className} h-full antialiased`}>
-      <body className={`min-h-auto flex flex-col overflow-x-hidden `}>
+    <html lang="en" className={` ${manrope.className} h-full antialiased `}>
+      <body
+        className={`min-h-auto flex flex-col overflow-x-hidden bg-linear-to-b from-[#00010F] to-[#000442]`}
+      >
         {children}
       </body>
     </html>

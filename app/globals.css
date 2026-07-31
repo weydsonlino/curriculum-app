@@ -2,17 +2,24 @@
 
 :root {
   --background: #000222;
-  --main-font: --font-manrope;
+  --main-font: var(--font-manrope);
   /* Cores para a porra do gradient */
-  --init-color: #8e19fb;
-  --finish-color: #1959fb;
+  --roxo-color: #8e19fb;
+  --azul-color: #1959fb;
+  /* Cor para o degrade do botão do cardproject */
+  --roxo-cardProject: #6012b1;
+  --azul-escuro: #102372;
   --elipse: url("../public/umaElipse.png");
+  --fundo: url("../public/oni.png");
 }
 
 @theme {
   --color-background: var(--background);
   --font-main: var(--main-font);
-  --color-init: var(--init-color);
-  --color-finish: var(--finish-color);
+  --color-init: var(--roxo-color);
+  --color-roxo-cardProject: var(--roxo-cardProject);
+  --color-finish: var(--azul-color);
+  --color-azul-escuro: var(--azul-escuro);
   --background-elipse: var(--elipse);
+  --background-teste: var(--fundo);
 }
